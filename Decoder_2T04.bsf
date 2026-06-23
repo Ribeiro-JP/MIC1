@@ -20,7 +20,7 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 112 144)
+	(rect 64 64 160 192)
 	(text "Decoder_2T04" (rect 5 0 88 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 112 25 124)(font "Arial" ))
 	(port
@@ -38,32 +38,32 @@ applicable agreement for further details.
 		(line (pt 0 48)(pt 16 48))
 	)
 	(port
-		(pt 96 32)
+		(pt 96 80)
 		(output)
 		(text "S3" (rect 0 0 15 14)(font "Arial" (font_size 8)))
-		(text "S3" (rect 60 27 75 41)(font "Arial" (font_size 8)))
-		(line (pt 96 32)(pt 80 32))
-	)
-	(port
-		(pt 96 48)
-		(output)
-		(text "S2" (rect 0 0 15 14)(font "Arial" (font_size 8)))
-		(text "S2" (rect 60 43 75 57)(font "Arial" (font_size 8)))
-		(line (pt 96 48)(pt 80 48))
+		(text "S3" (rect 60 75 75 89)(font "Arial" (font_size 8)))
+		(line (pt 96 80)(pt 80 80))
 	)
 	(port
 		(pt 96 64)
 		(output)
-		(text "S1" (rect 0 0 15 14)(font "Arial" (font_size 8)))
-		(text "S1" (rect 60 59 75 73)(font "Arial" (font_size 8)))
+		(text "S2" (rect 0 0 15 14)(font "Arial" (font_size 8)))
+		(text "S2" (rect 60 59 75 73)(font "Arial" (font_size 8)))
 		(line (pt 96 64)(pt 80 64))
 	)
 	(port
-		(pt 96 80)
+		(pt 96 48)
+		(output)
+		(text "S1" (rect 0 0 15 14)(font "Arial" (font_size 8)))
+		(text "S1" (rect 60 43 75 57)(font "Arial" (font_size 8)))
+		(line (pt 96 48)(pt 80 48))
+	)
+	(port
+		(pt 96 32)
 		(output)
 		(text "S0" (rect 0 0 15 14)(font "Arial" (font_size 8)))
-		(text "S0" (rect 60 75 75 89)(font "Arial" (font_size 8)))
-		(line (pt 96 80)(pt 80 80))
+		(text "S0" (rect 60 27 75 41)(font "Arial" (font_size 8)))
+		(line (pt 96 32)(pt 80 32))
 	)
 	(drawing
 		(rectangle (rect 16 16 80 112))
