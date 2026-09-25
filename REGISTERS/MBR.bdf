@@ -21,9 +21,9 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 64 232 232 248)
+	(rect 0 232 168 248)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "CLOCK" (rect 5 0 43 12)(font "Arial" ))
+	(text "CLOCK" (rect 5 0 42 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -39,7 +39,7 @@ applicable agreement for further details.
 	(input)
 	(rect -40 576 176 592)
 	(text "INPUT" (rect 173 0 201 10)(font "Arial" (font_size 6)))
-	(text "PROGRAM_BYTE[7..0]" (rect 5 0 121 12)(font "Arial" ))
+	(text "PROGRAM_BYTE[7..0]" (rect 5 0 120 12)(font "Arial" ))
 	(pt 216 8)
 	(drawing
 		(line (pt 132 12)(pt 157 12))
@@ -71,7 +71,7 @@ applicable agreement for further details.
 	(input)
 	(rect 80 72 248 88)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "LOAD" (rect 5 0 35 12)(font "Arial" ))
+	(text "LOAD" (rect 5 0 34 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -617,18 +617,35 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 176 80))
 	)
 )
+(symbol
+	(rect 208 176 256 208)
+	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
+	(text "inst14" (rect 3 21 32 33)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 13 16))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(line (pt 39 16)(pt 48 16))
+	)
+	(drawing
+		(line (pt 13 25)(pt 13 7))
+		(line (pt 13 7)(pt 31 16))
+		(line (pt 13 25)(pt 31 16))
+		(circle (rect 31 12 39 20))
+	)
+)
 (connector
 	(text "MIR[4]" (rect 221 160 254 172)(font "Arial" ))
 	(pt 264 176)
 	(pt 208 176)
-)
-(connector
-	(pt 264 192)
-	(pt 256 192)
-)
-(connector
-	(pt 256 192)
-	(pt 256 240)
 )
 (connector
 	(pt 328 176)
@@ -641,14 +658,6 @@ applicable agreement for further details.
 (connector
 	(pt 336 192)
 	(pt 344 192)
-)
-(connector
-	(pt 232 240)
-	(pt 256 240)
-)
-(connector
-	(pt 256 240)
-	(pt 336 240)
 )
 (connector
 	(text "MBR[31..0]" (rect 550 232 605 244)(font "Arial" ))
@@ -834,6 +843,26 @@ applicable agreement for further details.
 	(pt 216 584)
 	(bus)
 )
-(junction (pt 256 240))
+(connector
+	(pt 264 192)
+	(pt 256 192)
+)
+(connector
+	(pt 200 240)
+	(pt 200 192)
+)
+(connector
+	(pt 208 192)
+	(pt 200 192)
+)
+(connector
+	(pt 168 240)
+	(pt 200 240)
+)
+(connector
+	(pt 200 240)
+	(pt 336 240)
+)
 (junction (pt 960 152))
 (junction (pt 488 184))
+(junction (pt 200 240))
