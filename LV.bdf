@@ -71,7 +71,7 @@ applicable agreement for further details.
 	(input)
 	(rect 224 96 392 112)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "IN_C[31..0]" (rect 5 0 63 12)(font "Arial" ))
+	(text "IN_C[31..0]" (rect 5 0 62 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -324,6 +324,24 @@ applicable agreement for further details.
 		(circle (rect 31 12 39 20))
 	)
 )
+(symbol
+	(rect 544 120 576 152)
+	(text "GND" (rect 8 6 29 16)(font "Arial" (font_size 6)))
+	(text "inst" (rect 3 -1 20 11)(font "Arial" )(invisible))
+	(port
+		(pt 16 32)
+		(output)
+		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 18 20 23 32)(font "Courier New" (bold))(invisible))
+		(line (pt 16 24)(pt 16 32))
+	)
+	(drawing
+		(line (pt 8 24)(pt 16 16))
+		(line (pt 16 16)(pt 24 24))
+		(line (pt 8 24)(pt 24 24))
+	)
+	(flipx)
+)
 (connector
 	(pt 392 104)
 	(pt 648 104)
@@ -465,5 +483,15 @@ applicable agreement for further details.
 	(text "MIR[3]" (rect 306 232 339 244)(font "Arial" ))
 	(pt 440 248)
 	(pt 296 248)
+)
+(connector
+	(pt 672 168)
+	(pt 560 168)
+	(bus)
+)
+(connector
+	(pt 560 168)
+	(pt 560 152)
+	(bus)
 )
 (junction (pt 688 424))
